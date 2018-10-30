@@ -21,3 +21,5 @@ class CoreController {
 		}
 	}
 }
+
+$Core_Controller = new CoreController();

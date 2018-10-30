@@ -58,18 +58,17 @@ class CoreRoutes {
 	}
 
 	function route404() {
-		$err = <<<'ERR'
+$err = <<<'ERR'
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            ERROR 404
-        </title>
+        <title>ERROR 404</title>
         <style type="text/css">
             html, body{margin: 0px;padding: 0px;font-family: tahoma,arial,sans-serif;text-align: center;background: #afafaf;}
             .container{margin: 7rem 0rem 0rem 0rem;display: inline-block;}
             h1{margin: 0px;padding: 0px;}
             .special{font-size: 600%;border-top: 0.2rem solid black;border-bottom: 0.2rem solid black;}
+            h1:hover{color: #afafaf; text-shadow: 0rem 0rem 1rem black;}
         </style>
     </head>
     <body>
@@ -85,4 +84,4 @@ ERR;
 	}
 }
 
-$Core_Routes = new CoreRoutes;
+$Core_Routes = new CoreRoutes();
